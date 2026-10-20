@@ -1,0 +1,200 @@
+== every run: provenance, slots, reads per write
+
+             run        config                       target        w       topo   jd           power  fatal  writes  w_missed  reads  r_missed  reads/write  w_err  r_err
+20261020T103929Z threaded-wmaj rs-secondary-causal-majority majority star->star True battery/battery      0    1204         0 238342      2393        198.0      0      0
+20261020T104134Z   threaded-w1                 direct-27017        1 star->star True battery/battery      0    1204         0 239142      1501        198.6      0      0
+20261020T104339Z threaded-wmaj           rs-secondary-local majority star->star True battery/battery      0    1203         0 239311      1313        198.9      0      0
+20261020T104543Z   threaded-w2             rs-primary-local        2 star->star True battery/battery      0    1204         0 239223      1429        198.7      0      0
+20261020T104748Z   threaded-w1        rs-secondary-majority        1 star->star True battery/battery      0    1203         0 239119      1478        198.8      0      0
+20261020T104952Z threaded-wmaj             rs-primary-local majority star->star True battery/battery      0    1202         1 238962      1657        198.8      0      0
+20261020T105157Z   threaded-w1             rs-primary-local        1 star->star True battery/battery      0    1204         0 238978      1666        198.5      0      0
+20261020T105402Z   threaded-w1                 direct-27019        1 star->star True battery/battery      0    1204         0 239510      1167        198.9      0      0
+20261020T105606Z   threaded-w1           rs-secondary-local        1 star->star True battery/battery      0    1204         0 239152      1464        198.6      0      0
+20261020T105811Z threaded-wmaj      rs-primary-linearizable majority star->star True battery/battery      0    1203         0   8767    231745          7.3      0      0
+20261020T110019Z   threaded-w1 rs-secondary-causal-majority        1 star->star True battery/battery      0    1204         0 218016     22760        181.1      0      0
+20261020T110223Z   threaded-w1                 direct-27018        1 star->star True battery/battery      0    1204         0 239521      1138        198.9      0      0
+20261020T110428Z threaded-wmaj    rs-secondary-causal-local majority star->star True battery/battery      0    1204         0 239647      1046        199.0      0      0
+20261020T110633Z   threaded-w1      rs-primary-linearizable        1 star->star True battery/battery      0    1206         0   8686    232343          7.2      0      0
+20261020T110840Z   threaded-w1    rs-secondary-causal-local        1 star->star True battery/battery      0    1206         0 239980      1210        199.0      0      0
+20261020T111045Z   threaded-w3             rs-primary-local        3 star->star True battery/battery      0    1206         0 239826      1278        198.9      0      0
+20261020T111250Z threaded-wmaj        rs-secondary-majority majority star->star True battery/battery      0    1206         0 240141      1045        199.1      0      0
+20261020T111454Z   threaded-w1                 direct-27020        1 star->star True battery/battery      0    1205         0 239677      1297        198.9      0      0
+20261020T111659Z   threaded-w1        rs-secondary-majority        1 star->star True battery/battery      0    1206         0 240157       928        199.1      0      0
+20261020T111904Z   threaded-w1                 direct-27020        1 star->star True battery/battery      0    1206         0 239871      1338        198.9      0      0
+20261020T112108Z   threaded-w1 rs-secondary-causal-majority        1 star->star True battery/battery      0    1206         0 217550     23565        180.4      0      0
+20261020T112313Z threaded-wmaj      rs-primary-linearizable majority star->star True battery/battery      0    1204         0   8514    232325          7.1      0      0
+20261020T112521Z   threaded-w1      rs-primary-linearizable        1 star->star True battery/battery      0    1205         0   8421    232501          7.0      0      0
+20261020T112729Z   threaded-w1    rs-secondary-causal-local        1 star->star True battery/battery      0    1206         0 240162       949        199.1      0      0
+20261020T112934Z threaded-wmaj             rs-primary-local majority star->star True battery/battery      0    1206         0 239761      1338        198.8      0      0
+20261020T113138Z threaded-wmaj    rs-secondary-causal-local majority star->star True battery/battery      0    1206         0 239987      1036        199.0      0      0
+20261020T113343Z   threaded-w3             rs-primary-local        3 star->star True battery/battery      0    1206         0 239500      1584        198.6      0      0
+20261020T113548Z threaded-wmaj rs-secondary-causal-majority majority star->star True battery/battery      0    1206         0 239606      1443        198.7      0      0
+20261020T113753Z   threaded-w1                 direct-27017        1 star->star True battery/battery      0    1204         0 238503      2218        198.1      0      0
+20261020T113957Z   threaded-w1             rs-primary-local        1 star->star True battery/battery      0    1204         0 238203      2478        197.8      0      0
+20261020T114202Z   threaded-w1                 direct-27018        1 star->star True battery/battery      0    1204         0 239130      1582        198.6      0      0
+20261020T114406Z   threaded-w2             rs-primary-local        2 star->star True battery/battery      0    1204         0 238946      1725        198.5      0      0
+20261020T114611Z   threaded-w1                 direct-27019        1 star->star True battery/battery      0    1205         0 239181      1635        198.5      0      0
+20261020T114815Z threaded-wmaj        rs-secondary-majority majority star->star True battery/battery      0    1204         0 239512      1159        198.9      0      0
+20261020T115020Z threaded-wmaj           rs-secondary-local majority star->star True battery/battery      0    1204         0 239376      1284        198.8      0      0
+20261020T115225Z   threaded-w1           rs-secondary-local        1 star->star True battery/battery      0    1204         0 239213      1468        198.7      0      0
+
+== wire log, per target (non-warmup reads)
+
+       config                       target level sent (per read) afterClusterTime present                                                                                   listener summary
+threaded-wmaj rs-secondary-causal-majority              majority            228396/228396 {'find level=majority afterClusterTime=no': 1, 'find level=majority afterClusterTime=yes': 238841}
+  threaded-w1                 direct-27017                 local                 0/229180                                                   {'find level=local afterClusterTime=no': 239642}
+threaded-wmaj           rs-secondary-local                 local                 0/229350                                                   {'find level=local afterClusterTime=no': 239811}
+  threaded-w2             rs-primary-local                 local                 0/229274                                                   {'find level=local afterClusterTime=no': 239723}
+  threaded-w1        rs-secondary-majority              majority                 0/229172                                                {'find level=majority afterClusterTime=no': 239619}
+threaded-wmaj             rs-primary-local                 local                 0/229019                                                   {'find level=local afterClusterTime=no': 239462}
+  threaded-w1             rs-primary-local                 local                 0/229054                                                   {'find level=local afterClusterTime=no': 239478}
+  threaded-w1                 direct-27019                 local                 0/229586                                                   {'find level=local afterClusterTime=no': 240010}
+  threaded-w1           rs-secondary-local                 local                 0/229203                                                   {'find level=local afterClusterTime=no': 239652}
+threaded-wmaj      rs-primary-linearizable          linearizable                   0/8410                                              {'find level=linearizable afterClusterTime=no': 9267}
+  threaded-w1 rs-secondary-causal-majority              majority            208966/208966 {'find level=majority afterClusterTime=no': 1, 'find level=majority afterClusterTime=yes': 218515}
+  threaded-w1                 direct-27018                 local                 0/229562                                                   {'find level=local afterClusterTime=no': 240021}
+threaded-wmaj    rs-secondary-causal-local                 local            229680/229680       {'find level=local afterClusterTime=no': 1, 'find level=local afterClusterTime=yes': 240146}
+  threaded-w1      rs-primary-linearizable          linearizable                   0/8330                                              {'find level=linearizable afterClusterTime=no': 9186}
+  threaded-w1    rs-secondary-causal-local                 local            230016/230016       {'find level=local afterClusterTime=no': 1, 'find level=local afterClusterTime=yes': 240479}
+  threaded-w3             rs-primary-local                 local                 0/229867                                                   {'find level=local afterClusterTime=no': 240326}
+threaded-wmaj        rs-secondary-majority              majority                 0/230175                                                {'find level=majority afterClusterTime=no': 240641}
+  threaded-w1                 direct-27020                 local                 0/229721                                                   {'find level=local afterClusterTime=no': 240177}
+  threaded-w1        rs-secondary-majority              majority                 0/230192                                                {'find level=majority afterClusterTime=no': 240657}
+  threaded-w1                 direct-27020                 local                 0/229914                                                   {'find level=local afterClusterTime=no': 240371}
+  threaded-w1 rs-secondary-causal-majority              majority            208491/208491 {'find level=majority afterClusterTime=no': 1, 'find level=majority afterClusterTime=yes': 218049}
+threaded-wmaj      rs-primary-linearizable          linearizable                   0/8156                                              {'find level=linearizable afterClusterTime=no': 9014}
+  threaded-w1      rs-primary-linearizable          linearizable                   0/8086                                              {'find level=linearizable afterClusterTime=no': 8921}
+  threaded-w1    rs-secondary-causal-local                 local            230195/230195       {'find level=local afterClusterTime=no': 1, 'find level=local afterClusterTime=yes': 240661}
+threaded-wmaj             rs-primary-local                 local                 0/229815                                                   {'find level=local afterClusterTime=no': 240261}
+threaded-wmaj    rs-secondary-causal-local                 local            230007/230007       {'find level=local afterClusterTime=no': 1, 'find level=local afterClusterTime=yes': 240486}
+  threaded-w3             rs-primary-local                 local                 0/229559                                                   {'find level=local afterClusterTime=no': 240000}
+threaded-wmaj rs-secondary-causal-majority              majority            229636/229636 {'find level=majority afterClusterTime=no': 1, 'find level=majority afterClusterTime=yes': 240105}
+  threaded-w1                 direct-27017                 local                 0/228546                                                   {'find level=local afterClusterTime=no': 239003}
+  threaded-w1             rs-primary-local                 local                 0/228339                                                   {'find level=local afterClusterTime=no': 238703}
+  threaded-w1                 direct-27018                 local                 0/229200                                                   {'find level=local afterClusterTime=no': 239630}
+  threaded-w2             rs-primary-local                 local                 0/229005                                                   {'find level=local afterClusterTime=no': 239446}
+  threaded-w1                 direct-27019                 local                 0/229236                                                   {'find level=local afterClusterTime=no': 239681}
+threaded-wmaj        rs-secondary-majority              majority                 0/229572                                                {'find level=majority afterClusterTime=no': 240012}
+threaded-wmaj           rs-secondary-local                 local                 0/229429                                                   {'find level=local afterClusterTime=no': 239876}
+  threaded-w1           rs-secondary-local                 local                 0/229267                                                   {'find level=local afterClusterTime=no': 239713}
+
+== causal run: recorded operationTime vs the writer's opTime it was advanced to
+
+threaded-wmaj rs-secondary-causal-majority: differs on 1019/228396 reads (0.4%)
+threaded-w1 rs-secondary-causal-majority: differs on 0/208966 reads (0.0%)
+threaded-wmaj rs-secondary-causal-local: differs on 26390/229680 reads (11.5%)
+threaded-w1 rs-secondary-causal-local: differs on 362/230016 reads (0.2%)
+threaded-w1 rs-secondary-causal-majority: differs on 0/208491 reads (0.0%)
+threaded-w1 rs-secondary-causal-local: differs on 501/230195 reads (0.2%)
+threaded-wmaj rs-secondary-causal-local: differs on 26578/230007 reads (11.6%)
+threaded-wmaj rs-secondary-causal-majority: differs on 1137/229636 reads (0.5%)
+
+== operationTime check: causal reads against the listener's reply for the same request_id
+
+                                                              run                       target  reads  no_request_id  matched  equal  duplicate_reply_ids status
+20261020T103929Z__threaded-wmaj__rs-secondary-causal-majority__r1 rs-secondary-causal-majority 238342              0   238342 238342                    0   PASS
+  20261020T110019Z__threaded-w1__rs-secondary-causal-majority__r1 rs-secondary-causal-majority 218016              0   218016 218016                    0   PASS
+   20261020T110428Z__threaded-wmaj__rs-secondary-causal-local__r1    rs-secondary-causal-local 239647              0   239647 239647                    0   PASS
+     20261020T110840Z__threaded-w1__rs-secondary-causal-local__r1    rs-secondary-causal-local 239980              0   239980 239980                    0   PASS
+  20261020T112108Z__threaded-w1__rs-secondary-causal-majority__r2 rs-secondary-causal-majority 217550              0   217550 217550                    0   PASS
+     20261020T112729Z__threaded-w1__rs-secondary-causal-local__r2    rs-secondary-causal-local 240162              0   240162 240162                    0   PASS
+   20261020T113138Z__threaded-wmaj__rs-secondary-causal-local__r2    rs-secondary-causal-local 239987              0   239987 239987                    0   PASS
+20261020T113548Z__threaded-wmaj__rs-secondary-causal-majority__r2 rs-secondary-causal-majority 239606              0   239606 239606                    0   PASS
+
+== stale reads and median read latency
+
+       config                       target  stale  stale_of  read_p50_ms
+threaded-wmaj rs-secondary-causal-majority      0    228396        0.166
+  threaded-w1                 direct-27017      0    229180        0.151
+threaded-wmaj           rs-secondary-local      0    229350        0.169
+  threaded-w2             rs-primary-local      0    229274        0.150
+  threaded-w1        rs-secondary-majority  21081    229172        0.168
+threaded-wmaj             rs-primary-local      0    229019        0.151
+  threaded-w1             rs-primary-local      0    229054        0.151
+  threaded-w1                 direct-27019     14    229586        0.150
+  threaded-w1           rs-secondary-local      3    229203        0.166
+threaded-wmaj      rs-primary-linearizable      0      8410       12.006
+  threaded-w1 rs-secondary-causal-majority      0    208966        0.162
+  threaded-w1                 direct-27018      3    229562        0.150
+threaded-wmaj    rs-secondary-causal-local      0    229680        0.163
+  threaded-w1      rs-primary-linearizable      0      8330       13.188
+  threaded-w1    rs-secondary-causal-local      0    230016        0.162
+  threaded-w3             rs-primary-local      0    229867        0.147
+threaded-wmaj        rs-secondary-majority      0    230175        0.163
+  threaded-w1                 direct-27020      5    229721        0.150
+  threaded-w1        rs-secondary-majority  22481    230192        0.163
+  threaded-w1                 direct-27020     10    229914        0.148
+  threaded-w1 rs-secondary-causal-majority      0    208491        0.163
+threaded-wmaj      rs-primary-linearizable      0      8156       13.616
+  threaded-w1      rs-primary-linearizable      0      8086       13.701
+  threaded-w1    rs-secondary-causal-local      0    230195        0.160
+threaded-wmaj             rs-primary-local      0    229815        0.146
+threaded-wmaj    rs-secondary-causal-local      0    230007        0.162
+  threaded-w3             rs-primary-local      0    229559        0.147
+threaded-wmaj rs-secondary-causal-majority      0    229636        0.162
+  threaded-w1                 direct-27017      0    228546        0.149
+  threaded-w1             rs-primary-local      0    228339        0.152
+  threaded-w1                 direct-27018      7    229200        0.149
+  threaded-w2             rs-primary-local      0    229005        0.149
+  threaded-w1                 direct-27019     11    229236        0.149
+threaded-wmaj        rs-secondary-majority     11    229572        0.165
+threaded-wmaj           rs-secondary-local      0    229429        0.164
+  threaded-w1           rs-secondary-local      5    229267        0.166
+
+== write ack latency, primary-local runs (non-warmup)
+
+       config           target        w    j    n  ack_p50_ms  ack_p99_ms  interval_ms
+  threaded-w2 rs-primary-local        2 None 1155       1.072       1.492          100
+threaded-wmaj rs-primary-local majority None 1153      12.576      16.180          100
+  threaded-w1 rs-primary-local        1 None 1155       0.564       0.827          100
+  threaded-w3 rs-primary-local        3 None 1157       1.064       1.587          100
+threaded-wmaj rs-primary-local majority None 1157      13.023      15.486          100
+  threaded-w3 rs-primary-local        3 None 1157       1.061       1.546          100
+  threaded-w1 rs-primary-local        1 None 1155       0.597       1.129          100
+  threaded-w2 rs-primary-local        2 None 1155       1.087       1.713          100
+
+== per cell, pooled across rounds (non-warmup; latencies in ms)
+
+       config                       target  runs  stale stale_rate  read_p50  read_p90  read_p99  ack_p50  ack_p99  r_missed  w_missed
+  threaded-w1                 direct-27017     2      0    0.0000%     0.150     0.197     0.314    0.568    1.051      3719         0
+  threaded-w1                 direct-27018     2     10    0.0022%     0.149     0.160     0.244    0.584    1.037      2720         0
+  threaded-w1                 direct-27019     2     25    0.0054%     0.149     0.168     0.264    0.571    1.009      2802         0
+  threaded-w1                 direct-27020     2     15    0.0033%     0.149     0.162     0.238    0.568    1.049      2635         0
+  threaded-w1      rs-primary-linearizable     2      0    0.0000%    13.490    19.595    26.384    0.835    2.513    464844         0
+  threaded-w1             rs-primary-local     2      0    0.0000%     0.152     0.186     0.299    0.577    1.028      4144         0
+  threaded-w1    rs-secondary-causal-local     2      0    0.0000%     0.161     0.177     0.247    0.569    1.045      2159         0
+  threaded-w1 rs-secondary-causal-majority     2      0    0.0000%     0.162     0.178     0.318    0.568    1.015     46325         0
+  threaded-w1           rs-secondary-local     2      8    0.0017%     0.166     0.188     0.290    0.573    0.953      2932         0
+  threaded-w1        rs-secondary-majority     2  43562    9.4831%     0.165     0.191     0.281    0.567    0.888      2406         0
+  threaded-w2             rs-primary-local     2      0    0.0000%     0.149     0.175     0.266    1.079    1.575      3154         0
+  threaded-w3             rs-primary-local     2      0    0.0000%     0.147     0.161     0.232    1.063    1.562      2862         0
+threaded-wmaj      rs-primary-linearizable     2      0    0.0000%    13.013    19.734    27.276   16.711   28.744    464070         0
+threaded-wmaj             rs-primary-local     2      0    0.0000%     0.148     0.171     0.259   12.702   15.569      2995         1
+threaded-wmaj    rs-secondary-causal-local     2      0    0.0000%     0.162     0.174     0.252   13.022   15.251      2082         0
+threaded-wmaj rs-secondary-causal-majority     2      0    0.0000%     0.164     0.198     0.315   12.569   15.558      3836         0
+threaded-wmaj           rs-secondary-local     2      0    0.0000%     0.166     0.192     0.286   12.543   16.045      2597         0
+threaded-wmaj        rs-secondary-majority     2     11    0.0024%     0.164     0.179     0.272   12.696   15.566      2204         0
+
+== round agreement: medians per round, flagged if they differ by more than 20%
+
+       config                       target  read_p50_r1  read_p50_r2 read_diff  ack_p50_r1  ack_p50_r2 ack_diff stale_r1 stale_r2    flag
+  threaded-w1                 direct-27017        0.151        0.149      1.4%       0.558       0.579     3.8%   0.000%   0.000%        
+  threaded-w1                 direct-27018        0.150        0.149      0.4%       0.577       0.591     2.6%   0.001%   0.003%        
+  threaded-w1                 direct-27019        0.150        0.149      1.0%       0.562       0.586     4.3%   0.006%   0.005%        
+  threaded-w1                 direct-27020        0.150        0.148      0.8%       0.564       0.572     1.3%   0.002%   0.004%        
+  threaded-w1      rs-primary-linearizable       13.188       13.701      3.9%       0.851       0.823     3.4%   0.000%   0.000%        
+  threaded-w1             rs-primary-local        0.151        0.152      0.3%       0.564       0.597     5.9%   0.000%   0.000%        
+  threaded-w1    rs-secondary-causal-local        0.162        0.160      1.2%       0.571       0.565     1.1%   0.000%   0.000%        
+  threaded-w1 rs-secondary-causal-majority        0.162        0.163      0.6%       0.565       0.573     1.4%   0.000%   0.000%        
+  threaded-w1           rs-secondary-local        0.166        0.166      0.4%       0.566       0.581     2.7%   0.001%   0.002%        
+  threaded-w1        rs-secondary-majority        0.168        0.163      2.9%       0.566       0.568     0.3%   9.199%   9.766%        
+  threaded-w2             rs-primary-local        0.150        0.149      0.9%       1.072       1.087     1.5%   0.000%   0.000%        
+  threaded-w3             rs-primary-local        0.147        0.147      0.0%       1.064       1.061     0.2%   0.000%   0.000%        
+threaded-wmaj      rs-primary-linearizable       12.006       13.616     13.4%      16.539      16.931     2.4%   0.000%   0.000%        
+threaded-wmaj             rs-primary-local        0.151        0.146      3.0%      12.576      13.023     3.6%   0.000%   0.000%        
+threaded-wmaj    rs-secondary-causal-local        0.163        0.162      0.6%      12.776      13.029     2.0%   0.000%   0.000%        
+threaded-wmaj rs-secondary-causal-majority        0.166        0.162      2.3%      10.581      13.022    23.1%   0.000%   0.000% DIFFERS
+threaded-wmaj           rs-secondary-local        0.169        0.164      2.8%      11.070      12.675    14.5%   0.000%   0.000%        
+threaded-wmaj        rs-secondary-majority        0.163        0.165      1.3%      12.673      12.736     0.5%   0.000%   0.005%        
+
+1 of 18 cells differ by more than 20% between rounds

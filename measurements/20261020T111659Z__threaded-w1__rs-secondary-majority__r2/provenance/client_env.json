@@ -1,0 +1,31 @@
+{
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 08:22:19) [Clang 14.0.6 ]",
+  "python_executable": "/Users/faisalnaveed/Documents/honours-mongodb-2/.venv/bin/python",
+  "pymongo": "4.18.0",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "machine": "arm64",
+  "processor": "arm",
+  "cpu_count": 12,
+  "hostname": "MacBook-Pro-154.local",
+  "tz": "AEDT+1100",
+  "cwd": "/Users/faisalnaveed/Documents/honours-mongodb-2",
+  "sysctl_cpu": {
+    "cmd": "sysctl -n machdep.cpu.brand_string",
+    "rc": 0,
+    "stdout": "Apple M2 Pro",
+    "stderr": ""
+  },
+  "power": "battery",
+  "power_source": {
+    "cmd": "pmset -g batt",
+    "rc": 0,
+    "stdout": "Now drawing from 'Battery Power'\n -InternalBattery-0 (id=37027939)\t57%; discharging; 4:02 remaining present: true",
+    "stderr": ""
+  },
+  "clock_sync": {
+    "cmd": "sntp -d time.apple.com",
+    "rc": 0,
+    "stdout": "sntp_exchange {\n        result: 0 (Success)\n        header: 24 (li:0 vn:4 mode:4)\n       stratum: 01 (1)\n          poll: 03 (8)\n     precision: FFFFFFEC (9.536743e-07)\n         delay: 0000.0000 (0.000000000)\n    dispersion: 0000.0008 (0.000122070)\n           ref: 47505373 (\"GPSs\")\n         t_ref: EE81CC2A.96298E28 (4001483818.586571583)\n            t1: EE81CC2B.973B3205 (4001483819.590746999)\n            t2: EE81CC2B.9858780B (4001483819.595099928)\n            t3: EE81CC2B.98594C82 (4001483819.595112592)\n            t4: EE81CC2B.98DBDF8F (4001483819.597104999)\n        offset: 0000000000000000.004D597C80000000 (0.001180261)\n         delay: 0000000000000000.019FD91300000000 (0.006345336)\n          mean: 00000000EE81CC2B.9858E24680000000 (4001483819.595106125)\n         error: 0000000000000000.0008000000000000 (0.000122070)\n          addr: 17.253.66.37\n}\nsntp_exchange {\n        result: 0 (Success)\n        header: 24 (li:0 vn:4 mode:4)\n       stratum: 01 (1)\n          poll: 03 (8)\n     precision: FFFFFFEC (9.536743e-07)\n         delay: 0000.0000 (0.000000000)\n    dispersion: 0000.0008 (0.000122070)\n           ref: 47505373 (\"GPSs\")\n         t_ref: EE81CC2A.96298E28 (4001483818.586571583)\n            t1: EE81CC2B.992B7FE0 (4001483819.598319999)\n            t2: EE81CC2B.9A5AF5CD (4001483819.602950441)\n            t3: EE81CC2B.9A5BC947 (4001483819.602963046)\n            t4: EE81CC2B.9ADF3F96 (4001483819.604968999)\n        offset: 0000000000000000.0055FFCF00000000 (0.001312244)\n         delay: 0000000000000000.01B2EC3C00000000 (0.006636395)\n          mean: 00000000EE81CC2B.9A5B5F8A00000000 (4001483819.602956772)\n         error: 0000000000000000.0008000000000000 (0.000122070)\n          addr: 17.253.66.37\n}\nsntp_exchange {\n        result: 0 (Success)\n        header: 24 (li:0 vn:4 mode:4)\n       stratum: 02 (2)\n          poll: 06 (64)\n     precision: FFFFFFEB (4.768372e-07)\n         delay: 0000.2395 (0.138992310)\n    dispersion: 0000.0130 (0.004638672)\n           ref: 11FD447D (125.68.253.17)\n         t_ref: EE81CB91.686FE577 (4001483665.407957402)\n            t1: EE81CC2B.9B2799A1 (4001483819.606072999)\n            t2: EE81CC2B.A28838A6 (4001483819.634891071)\n            t3: EE81CC2B.A28A3214 (4001483819.634921197)\n            t4: EE81CC2B.A83F7058 (4001483819.657217999)\n        offset: 0000000000000000.00D5B06080000000 (0.003260635)\n         delay: 0000000000000000.0D15DD4900000000 (0.051114874)\n          mean: 00000000EE81CC2B.A289355D00000000 (4001483819.634906292)\n         error: 0000000000000000.12FA800000000000 (0.074134827)\n          addr: 17.253.34.131\n}\nsntp_exchange {\n        result: 0 (Success)\n        header: 24 (li:0 vn:4 mode:4)\n       stratum: 02 (2)\n          poll: 06 (64)\n     precision: FFFFFFEB (4.768372e-07)\n         delay: 0000.2395 (0.138992310)\n    dispersion: 0000.0130 (0.004638672)\n           ref: 11FD447D (125.68.253.17)\n         t_ref: EE81CB91.686FE577 (4001483665.407957402)\n            t1: EE81CC2B.A8A6EB91 (4001483819.658796999)\n            t2: EE81CC2B.B055CD22 (4001483819.688809223)\n            t3: EE81CC2B.B056E62F (4001483819.688825975)\n            t4: EE81CC2B.B6B228DC (4001483819.713655999)\n        offset: 0000000000000000.00A9CF7200000000 (0.002591100)\n         delay: 0000000000000000.0E0A243E00000000 (0.054842248)\n          mean: 00000000EE81CC2B.B05659A880000000 (4001483819.688817501)\n         error: 0000000000000000.12FA800000000000 (0.074134827)\n          addr: 17.253.34.131\n}\nsntp_exchange {\n        result: 0 (Success)\n        header: 24 (li:0 vn:4 mode:4)\n       stratum: 01 (1)\n          poll: 03 (8)\n     precision: FFFFFFEC (9.536743e-07)\n         delay: 0000.0000 (0.000000000)\n    dispersion: 0000.0008 (0.000122070)\n           ref: 47505373 (\"GPSs\")\n         t_ref: EE81CC2A.810257F5 (4001483818.503942010)\n            t1: EE81CC2B.B71FEEB2 (4001483819.715330999)\n            t2: EE81CC2B.B84A3D89 (4001483819.719882818)\n            t3: EE81CC2B.B84B26D2 (4001483819.719896723)\n            t4: EE81CC2B.B8D4AA10 (4001483819.721994999)\n        offset: 0000000000000000.005065CC80000000 (0.001226771)\n         delay: 0000000000000000.01B3D21500000000 (0.006650095)\n          mean: 00000000EE81CC2B.B84AB22D80000000 (4001483819.719889641)\n         error: 0000000000000000.0008000000000000 (0.000122070)\n          addr: 17.253.66.45\n}\nselected:\nsntp_exchange {\n        result: 0 (Success)\n        header: 24 (li:0 vn:4 mode:4)\n       stratum: 01 (1)\n          poll: 03 (8)\n     precision: FFFFFFEC (9.536743e-07)\n         delay: 0000.0000 (0.000000000)\n    dispersion: 0000.0008 (0.000122070)\n           ref: 47505373 (\"GPSs\")\n         t_ref: EE81CC2A.96298E28 (4001483818.586571583)\n            t1: EE81CC2B.973B3205 (4001483819.590746999)\n            t2: EE81CC2B.9858780B (4001483819.595099928)\n            t3: EE81CC2B.98594C82 (4001483819.595112592)\n            t4: EE81CC2B.98DBDF8F (4001483819.597104999)\n        offset: 0000000000000000.004D597C80000000 (0.001180261)\n         delay: 0000000000000000.019FD91300000000 (0.006345336)\n          mean: 00000000EE81CC2B.9858E24680000000 (4001483819.595106125)\n         error: 0000000000000000.0008000000000000 (0.000122070)\n          addr: 17.253.66.37\n}\n+0.001180 +/- 0.006467 time.apple.com 17.253.66.37",
+    "stderr": ""
+  }
+}

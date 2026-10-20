@@ -1,0 +1,674 @@
+[
+  {
+    "host": "127.0.0.1:27017",
+    "buildInfo": {
+      "version": "7.0.45",
+      "gitVersion": "a52313e13ab55c9bddf7c3ff91dab286fa381796",
+      "modules": [],
+      "allocator": "system",
+      "javascriptEngine": "mozjs",
+      "sysInfo": "deprecated",
+      "versionArray": [
+        7,
+        0,
+        45,
+        0
+      ],
+      "openssl": {
+        "running": "Apple Secure Transport"
+      },
+      "buildEnvironment": {
+        "distmod": "",
+        "distarch": "aarch64",
+        "cc": "/Applications/Xcode13.2.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang: Apple clang version 13.0.0 (clang-1300.0.29.30)",
+        "ccflags": "-Wno-error=unknown-warning-option -isysroot /Applications/Xcode13.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.0 --target=darwin20.0.0 -arch arm64 -Werror -include mongo/platform/basic.h -ffp-contract=off -fasynchronous-unwind-tables -g2 -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -fno-omit-frame-pointer -fno-strict-aliasing -O2 -Wno-unused-local-typedefs -Wno-unused-function -Wno-unused-private-field -Wno-deprecated-declarations -Wno-tautological-constant-out-of-range-compare -Wno-tautological-constant-compare -Wno-tautological-unsigned-zero-compare -Wno-tautological-unsigned-enum-zero-compare -Wno-unused-const-variable -Wno-missing-braces -Wno-inconsistent-missing-override -Wno-potentially-evaluated-expression -Wno-unused-lambda-capture -Wunguarded-availability -fstack-protector-strong -fno-limit-debug-info -Wimplicit-fallthrough",
+        "cxx": "/Applications/Xcode13.2.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++: Apple clang version 13.0.0 (clang-1300.0.29.30)",
+        "cxxflags": "-Werror=unused-result -Woverloaded-virtual -Wpessimizing-move -Wno-undefined-var-template -Wno-instantiation-after-specialization -fsized-deallocation -Wno-defaulted-function-deleted -Wunused-exception-parameter -Wno-deprecated -stdlib=libc++ -std=c++20",
+        "linkflags": "-Wl,-syslibroot,/Applications/Xcode13.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.0 --target=darwin20.0.0 -arch arm64 -Wl,-fatal_warnings -Wl,-bind_at_load -fstack-protector-strong -stdlib=libc++",
+        "target_arch": "aarch64",
+        "target_os": "macOS",
+        "cppdefines": "SAFEINT_USE_INTRINSICS 0 PCRE2_STATIC NDEBUG ASIO_HAS_STD_INVOKE_RESULT ABSL_FORCE_ALIGNED_ACCESS BOOST_ENABLE_ASSERT_DEBUG_HANDLER BOOST_FILESYSTEM_NO_CXX20_ATOMIC_REF BOOST_LOG_NO_SHORTHAND_NAMES BOOST_LOG_USE_NATIVE_SYSLOG BOOST_LOG_WITHOUT_THREAD_ATTR BOOST_MATH_NO_LONG_DOUBLE_MATH_FUNCTIONS BOOST_SYSTEM_NO_DEPRECATED BOOST_THREAD_USES_DATETIME BOOST_THREAD_VERSION 5"
+      },
+      "bits": 64,
+      "debug": false,
+      "maxBsonObjectSize": 16777216,
+      "macOS": {
+        "osProductVersion": "27.0.1",
+        "osRelease": "27.0.0",
+        "version": "Darwin Kernel Version 27.0.0: Tue Aug 11 21:20:40 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6020"
+      },
+      "storageEngines": [
+        "devnull",
+        "wiredTiger"
+      ],
+      "ok": 1.0,
+      "$clusterTime": {
+        "clusterTime": "Timestamp(1792494520, 12)",
+        "signature": {
+          "hash": "b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+          "keyId": 0
+        }
+      },
+      "operationTime": "Timestamp(1792494520, 12)"
+    },
+    "hostInfo": {
+      "system": {
+        "currentTime": "2026-10-20 11:08:40.913000",
+        "hostname": "MacBook-Pro-154.local",
+        "cpuAddrSize": 64,
+        "memSizeMB": 32768,
+        "memLimitMB": 32768,
+        "numCores": 12,
+        "numCoresAvailableToProcess": 12,
+        "numPhysicalCores": 12,
+        "numCpuSockets": 1,
+        "cpuArch": "arm64",
+        "numaEnabled": false,
+        "numNumaNodes": 1
+      },
+      "os": {
+        "type": "Darwin",
+        "name": "Mac OS X",
+        "version": "27.0.0"
+      },
+      "extra": {
+        "versionString": "Darwin Kernel Version 27.0.0: Tue Aug 11 21:20:40 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6020",
+        "alwaysFullSync": 0,
+        "nfsAsync": 0,
+        "model": "Mac14,10",
+        "cpuString": "Apple M2 Pro",
+        "pageSize": 16384,
+        "scheduler": "edge"
+      },
+      "ok": 1.0,
+      "$clusterTime": {
+        "clusterTime": "Timestamp(1792494520, 12)",
+        "signature": {
+          "hash": "b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+          "keyId": 0
+        }
+      },
+      "operationTime": "Timestamp(1792494520, 12)"
+    },
+    "getCmdLineOpts": {
+      "argv": [
+        "mongod",
+        "--replSet",
+        "rs0",
+        "--port",
+        "27017",
+        "--dbpath",
+        "/Users/faisalnaveed/mongo-rs-7.0.45/n0",
+        "--bind_ip",
+        "127.0.0.1",
+        "--logpath",
+        "/Users/faisalnaveed/mongo-rs-7.0.45/n0/mongod.log"
+      ],
+      "parsed": {
+        "net": {
+          "bindIp": "127.0.0.1",
+          "port": 27017
+        },
+        "replication": {
+          "replSet": "rs0"
+        },
+        "storage": {
+          "dbPath": "/Users/faisalnaveed/mongo-rs-7.0.45/n0"
+        },
+        "systemLog": {
+          "destination": "file",
+          "path": "/Users/faisalnaveed/mongo-rs-7.0.45/n0/mongod.log"
+        }
+      },
+      "ok": 1.0,
+      "$clusterTime": {
+        "clusterTime": "Timestamp(1792494520, 12)",
+        "signature": {
+          "hash": "b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+          "keyId": 0
+        }
+      },
+      "operationTime": "Timestamp(1792494520, 12)"
+    },
+    "featureCompatibilityVersion": {
+      "featureCompatibilityVersion": {
+        "version": "7.0"
+      },
+      "ok": 1.0,
+      "$clusterTime": {
+        "clusterTime": "Timestamp(1792494520, 12)",
+        "signature": {
+          "hash": "b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+          "keyId": 0
+        }
+      },
+      "operationTime": "Timestamp(1792494520, 12)"
+    },
+    "writeConcernDefaults": {
+      "defaultReadConcern": {
+        "level": "local"
+      },
+      "defaultWriteConcern": {
+        "w": "majority",
+        "wtimeout": 0
+      },
+      "defaultWriteConcernSource": "implicit",
+      "defaultReadConcernSource": "implicit",
+      "localUpdateWallClockTime": "2026-10-20 11:08:40.914000",
+      "ok": 1.0,
+      "$clusterTime": {
+        "clusterTime": "Timestamp(1792494520, 12)",
+        "signature": {
+          "hash": "b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+          "keyId": 0
+        }
+      },
+      "operationTime": "Timestamp(1792494520, 12)"
+    },
+    "writeConcernMajorityJournalDefault": true
+  },
+  {
+    "host": "127.0.0.1:27018",
+    "buildInfo": {
+      "version": "7.0.45",
+      "gitVersion": "a52313e13ab55c9bddf7c3ff91dab286fa381796",
+      "modules": [],
+      "allocator": "system",
+      "javascriptEngine": "mozjs",
+      "sysInfo": "deprecated",
+      "versionArray": [
+        7,
+        0,
+        45,
+        0
+      ],
+      "openssl": {
+        "running": "Apple Secure Transport"
+      },
+      "buildEnvironment": {
+        "distmod": "",
+        "distarch": "aarch64",
+        "cc": "/Applications/Xcode13.2.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang: Apple clang version 13.0.0 (clang-1300.0.29.30)",
+        "ccflags": "-Wno-error=unknown-warning-option -isysroot /Applications/Xcode13.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.0 --target=darwin20.0.0 -arch arm64 -Werror -include mongo/platform/basic.h -ffp-contract=off -fasynchronous-unwind-tables -g2 -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -fno-omit-frame-pointer -fno-strict-aliasing -O2 -Wno-unused-local-typedefs -Wno-unused-function -Wno-unused-private-field -Wno-deprecated-declarations -Wno-tautological-constant-out-of-range-compare -Wno-tautological-constant-compare -Wno-tautological-unsigned-zero-compare -Wno-tautological-unsigned-enum-zero-compare -Wno-unused-const-variable -Wno-missing-braces -Wno-inconsistent-missing-override -Wno-potentially-evaluated-expression -Wno-unused-lambda-capture -Wunguarded-availability -fstack-protector-strong -fno-limit-debug-info -Wimplicit-fallthrough",
+        "cxx": "/Applications/Xcode13.2.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++: Apple clang version 13.0.0 (clang-1300.0.29.30)",
+        "cxxflags": "-Werror=unused-result -Woverloaded-virtual -Wpessimizing-move -Wno-undefined-var-template -Wno-instantiation-after-specialization -fsized-deallocation -Wno-defaulted-function-deleted -Wunused-exception-parameter -Wno-deprecated -stdlib=libc++ -std=c++20",
+        "linkflags": "-Wl,-syslibroot,/Applications/Xcode13.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.0 --target=darwin20.0.0 -arch arm64 -Wl,-fatal_warnings -Wl,-bind_at_load -fstack-protector-strong -stdlib=libc++",
+        "target_arch": "aarch64",
+        "target_os": "macOS",
+        "cppdefines": "SAFEINT_USE_INTRINSICS 0 PCRE2_STATIC NDEBUG ASIO_HAS_STD_INVOKE_RESULT ABSL_FORCE_ALIGNED_ACCESS BOOST_ENABLE_ASSERT_DEBUG_HANDLER BOOST_FILESYSTEM_NO_CXX20_ATOMIC_REF BOOST_LOG_NO_SHORTHAND_NAMES BOOST_LOG_USE_NATIVE_SYSLOG BOOST_LOG_WITHOUT_THREAD_ATTR BOOST_MATH_NO_LONG_DOUBLE_MATH_FUNCTIONS BOOST_SYSTEM_NO_DEPRECATED BOOST_THREAD_USES_DATETIME BOOST_THREAD_VERSION 5"
+      },
+      "bits": 64,
+      "debug": false,
+      "maxBsonObjectSize": 16777216,
+      "macOS": {
+        "osProductVersion": "27.0.1",
+        "osRelease": "27.0.0",
+        "version": "Darwin Kernel Version 27.0.0: Tue Aug 11 21:20:40 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6020"
+      },
+      "storageEngines": [
+        "devnull",
+        "wiredTiger"
+      ],
+      "ok": 1.0,
+      "$clusterTime": {
+        "clusterTime": "Timestamp(1792494520, 12)",
+        "signature": {
+          "hash": "b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+          "keyId": 0
+        }
+      },
+      "operationTime": "Timestamp(1792494520, 12)"
+    },
+    "hostInfo": {
+      "system": {
+        "currentTime": "2026-10-20 11:08:40.916000",
+        "hostname": "MacBook-Pro-154.local:27018",
+        "cpuAddrSize": 64,
+        "memSizeMB": 32768,
+        "memLimitMB": 32768,
+        "numCores": 12,
+        "numCoresAvailableToProcess": 12,
+        "numPhysicalCores": 12,
+        "numCpuSockets": 1,
+        "cpuArch": "arm64",
+        "numaEnabled": false,
+        "numNumaNodes": 1
+      },
+      "os": {
+        "type": "Darwin",
+        "name": "Mac OS X",
+        "version": "27.0.0"
+      },
+      "extra": {
+        "versionString": "Darwin Kernel Version 27.0.0: Tue Aug 11 21:20:40 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6020",
+        "alwaysFullSync": 0,
+        "nfsAsync": 0,
+        "model": "Mac14,10",
+        "cpuString": "Apple M2 Pro",
+        "pageSize": 16384,
+        "scheduler": "edge"
+      },
+      "ok": 1.0,
+      "$clusterTime": {
+        "clusterTime": "Timestamp(1792494520, 12)",
+        "signature": {
+          "hash": "b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+          "keyId": 0
+        }
+      },
+      "operationTime": "Timestamp(1792494520, 12)"
+    },
+    "getCmdLineOpts": {
+      "argv": [
+        "mongod",
+        "--replSet",
+        "rs0",
+        "--port",
+        "27018",
+        "--dbpath",
+        "/Users/faisalnaveed/mongo-rs-7.0.45/n1",
+        "--bind_ip",
+        "127.0.0.1",
+        "--logpath",
+        "/Users/faisalnaveed/mongo-rs-7.0.45/n1/mongod.log"
+      ],
+      "parsed": {
+        "net": {
+          "bindIp": "127.0.0.1",
+          "port": 27018
+        },
+        "replication": {
+          "replSet": "rs0"
+        },
+        "storage": {
+          "dbPath": "/Users/faisalnaveed/mongo-rs-7.0.45/n1"
+        },
+        "systemLog": {
+          "destination": "file",
+          "path": "/Users/faisalnaveed/mongo-rs-7.0.45/n1/mongod.log"
+        }
+      },
+      "ok": 1.0,
+      "$clusterTime": {
+        "clusterTime": "Timestamp(1792494520, 12)",
+        "signature": {
+          "hash": "b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+          "keyId": 0
+        }
+      },
+      "operationTime": "Timestamp(1792494520, 12)"
+    },
+    "featureCompatibilityVersion": {
+      "featureCompatibilityVersion": {
+        "version": "7.0"
+      },
+      "ok": 1.0,
+      "$clusterTime": {
+        "clusterTime": "Timestamp(1792494520, 12)",
+        "signature": {
+          "hash": "b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+          "keyId": 0
+        }
+      },
+      "operationTime": "Timestamp(1792494520, 12)"
+    },
+    "writeConcernDefaults": {
+      "defaultReadConcern": {
+        "level": "local"
+      },
+      "defaultWriteConcern": {
+        "w": "majority",
+        "wtimeout": 0
+      },
+      "defaultWriteConcernSource": "implicit",
+      "defaultReadConcernSource": "implicit",
+      "localUpdateWallClockTime": "2026-10-20 11:08:40.917000",
+      "ok": 1.0,
+      "$clusterTime": {
+        "clusterTime": "Timestamp(1792494520, 12)",
+        "signature": {
+          "hash": "b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+          "keyId": 0
+        }
+      },
+      "operationTime": "Timestamp(1792494520, 12)"
+    },
+    "writeConcernMajorityJournalDefault": true
+  },
+  {
+    "host": "127.0.0.1:27019",
+    "buildInfo": {
+      "version": "7.0.45",
+      "gitVersion": "a52313e13ab55c9bddf7c3ff91dab286fa381796",
+      "modules": [],
+      "allocator": "system",
+      "javascriptEngine": "mozjs",
+      "sysInfo": "deprecated",
+      "versionArray": [
+        7,
+        0,
+        45,
+        0
+      ],
+      "openssl": {
+        "running": "Apple Secure Transport"
+      },
+      "buildEnvironment": {
+        "distmod": "",
+        "distarch": "aarch64",
+        "cc": "/Applications/Xcode13.2.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang: Apple clang version 13.0.0 (clang-1300.0.29.30)",
+        "ccflags": "-Wno-error=unknown-warning-option -isysroot /Applications/Xcode13.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.0 --target=darwin20.0.0 -arch arm64 -Werror -include mongo/platform/basic.h -ffp-contract=off -fasynchronous-unwind-tables -g2 -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -fno-omit-frame-pointer -fno-strict-aliasing -O2 -Wno-unused-local-typedefs -Wno-unused-function -Wno-unused-private-field -Wno-deprecated-declarations -Wno-tautological-constant-out-of-range-compare -Wno-tautological-constant-compare -Wno-tautological-unsigned-zero-compare -Wno-tautological-unsigned-enum-zero-compare -Wno-unused-const-variable -Wno-missing-braces -Wno-inconsistent-missing-override -Wno-potentially-evaluated-expression -Wno-unused-lambda-capture -Wunguarded-availability -fstack-protector-strong -fno-limit-debug-info -Wimplicit-fallthrough",
+        "cxx": "/Applications/Xcode13.2.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++: Apple clang version 13.0.0 (clang-1300.0.29.30)",
+        "cxxflags": "-Werror=unused-result -Woverloaded-virtual -Wpessimizing-move -Wno-undefined-var-template -Wno-instantiation-after-specialization -fsized-deallocation -Wno-defaulted-function-deleted -Wunused-exception-parameter -Wno-deprecated -stdlib=libc++ -std=c++20",
+        "linkflags": "-Wl,-syslibroot,/Applications/Xcode13.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.0 --target=darwin20.0.0 -arch arm64 -Wl,-fatal_warnings -Wl,-bind_at_load -fstack-protector-strong -stdlib=libc++",
+        "target_arch": "aarch64",
+        "target_os": "macOS",
+        "cppdefines": "SAFEINT_USE_INTRINSICS 0 PCRE2_STATIC NDEBUG ASIO_HAS_STD_INVOKE_RESULT ABSL_FORCE_ALIGNED_ACCESS BOOST_ENABLE_ASSERT_DEBUG_HANDLER BOOST_FILESYSTEM_NO_CXX20_ATOMIC_REF BOOST_LOG_NO_SHORTHAND_NAMES BOOST_LOG_USE_NATIVE_SYSLOG BOOST_LOG_WITHOUT_THREAD_ATTR BOOST_MATH_NO_LONG_DOUBLE_MATH_FUNCTIONS BOOST_SYSTEM_NO_DEPRECATED BOOST_THREAD_USES_DATETIME BOOST_THREAD_VERSION 5"
+      },
+      "bits": 64,
+      "debug": false,
+      "maxBsonObjectSize": 16777216,
+      "macOS": {
+        "osProductVersion": "27.0.1",
+        "osRelease": "27.0.0",
+        "version": "Darwin Kernel Version 27.0.0: Tue Aug 11 21:20:40 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6020"
+      },
+      "storageEngines": [
+        "devnull",
+        "wiredTiger"
+      ],
+      "ok": 1.0,
+      "$clusterTime": {
+        "clusterTime": "Timestamp(1792494520, 12)",
+        "signature": {
+          "hash": "b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+          "keyId": 0
+        }
+      },
+      "operationTime": "Timestamp(1792494520, 12)"
+    },
+    "hostInfo": {
+      "system": {
+        "currentTime": "2026-10-20 11:08:40.920000",
+        "hostname": "MacBook-Pro-154.local:27019",
+        "cpuAddrSize": 64,
+        "memSizeMB": 32768,
+        "memLimitMB": 32768,
+        "numCores": 12,
+        "numCoresAvailableToProcess": 12,
+        "numPhysicalCores": 12,
+        "numCpuSockets": 1,
+        "cpuArch": "arm64",
+        "numaEnabled": false,
+        "numNumaNodes": 1
+      },
+      "os": {
+        "type": "Darwin",
+        "name": "Mac OS X",
+        "version": "27.0.0"
+      },
+      "extra": {
+        "versionString": "Darwin Kernel Version 27.0.0: Tue Aug 11 21:20:40 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6020",
+        "alwaysFullSync": 0,
+        "nfsAsync": 0,
+        "model": "Mac14,10",
+        "cpuString": "Apple M2 Pro",
+        "pageSize": 16384,
+        "scheduler": "edge"
+      },
+      "ok": 1.0,
+      "$clusterTime": {
+        "clusterTime": "Timestamp(1792494520, 12)",
+        "signature": {
+          "hash": "b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+          "keyId": 0
+        }
+      },
+      "operationTime": "Timestamp(1792494520, 12)"
+    },
+    "getCmdLineOpts": {
+      "argv": [
+        "mongod",
+        "--replSet",
+        "rs0",
+        "--port",
+        "27019",
+        "--dbpath",
+        "/Users/faisalnaveed/mongo-rs-7.0.45/n2",
+        "--bind_ip",
+        "127.0.0.1",
+        "--logpath",
+        "/Users/faisalnaveed/mongo-rs-7.0.45/n2/mongod.log"
+      ],
+      "parsed": {
+        "net": {
+          "bindIp": "127.0.0.1",
+          "port": 27019
+        },
+        "replication": {
+          "replSet": "rs0"
+        },
+        "storage": {
+          "dbPath": "/Users/faisalnaveed/mongo-rs-7.0.45/n2"
+        },
+        "systemLog": {
+          "destination": "file",
+          "path": "/Users/faisalnaveed/mongo-rs-7.0.45/n2/mongod.log"
+        }
+      },
+      "ok": 1.0,
+      "$clusterTime": {
+        "clusterTime": "Timestamp(1792494520, 12)",
+        "signature": {
+          "hash": "b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+          "keyId": 0
+        }
+      },
+      "operationTime": "Timestamp(1792494520, 12)"
+    },
+    "featureCompatibilityVersion": {
+      "featureCompatibilityVersion": {
+        "version": "7.0"
+      },
+      "ok": 1.0,
+      "$clusterTime": {
+        "clusterTime": "Timestamp(1792494520, 12)",
+        "signature": {
+          "hash": "b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+          "keyId": 0
+        }
+      },
+      "operationTime": "Timestamp(1792494520, 12)"
+    },
+    "writeConcernDefaults": {
+      "defaultReadConcern": {
+        "level": "local"
+      },
+      "defaultWriteConcern": {
+        "w": "majority",
+        "wtimeout": 0
+      },
+      "defaultWriteConcernSource": "implicit",
+      "defaultReadConcernSource": "implicit",
+      "localUpdateWallClockTime": "2026-10-20 11:08:40.921000",
+      "ok": 1.0,
+      "$clusterTime": {
+        "clusterTime": "Timestamp(1792494520, 12)",
+        "signature": {
+          "hash": "b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+          "keyId": 0
+        }
+      },
+      "operationTime": "Timestamp(1792494520, 12)"
+    },
+    "writeConcernMajorityJournalDefault": true
+  },
+  {
+    "host": "127.0.0.1:27020",
+    "buildInfo": {
+      "version": "7.0.45",
+      "gitVersion": "a52313e13ab55c9bddf7c3ff91dab286fa381796",
+      "modules": [],
+      "allocator": "system",
+      "javascriptEngine": "mozjs",
+      "sysInfo": "deprecated",
+      "versionArray": [
+        7,
+        0,
+        45,
+        0
+      ],
+      "openssl": {
+        "running": "Apple Secure Transport"
+      },
+      "buildEnvironment": {
+        "distmod": "",
+        "distarch": "aarch64",
+        "cc": "/Applications/Xcode13.2.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang: Apple clang version 13.0.0 (clang-1300.0.29.30)",
+        "ccflags": "-Wno-error=unknown-warning-option -isysroot /Applications/Xcode13.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.0 --target=darwin20.0.0 -arch arm64 -Werror -include mongo/platform/basic.h -ffp-contract=off -fasynchronous-unwind-tables -g2 -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -fno-omit-frame-pointer -fno-strict-aliasing -O2 -Wno-unused-local-typedefs -Wno-unused-function -Wno-unused-private-field -Wno-deprecated-declarations -Wno-tautological-constant-out-of-range-compare -Wno-tautological-constant-compare -Wno-tautological-unsigned-zero-compare -Wno-tautological-unsigned-enum-zero-compare -Wno-unused-const-variable -Wno-missing-braces -Wno-inconsistent-missing-override -Wno-potentially-evaluated-expression -Wno-unused-lambda-capture -Wunguarded-availability -fstack-protector-strong -fno-limit-debug-info -Wimplicit-fallthrough",
+        "cxx": "/Applications/Xcode13.2.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++: Apple clang version 13.0.0 (clang-1300.0.29.30)",
+        "cxxflags": "-Werror=unused-result -Woverloaded-virtual -Wpessimizing-move -Wno-undefined-var-template -Wno-instantiation-after-specialization -fsized-deallocation -Wno-defaulted-function-deleted -Wunused-exception-parameter -Wno-deprecated -stdlib=libc++ -std=c++20",
+        "linkflags": "-Wl,-syslibroot,/Applications/Xcode13.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.0 --target=darwin20.0.0 -arch arm64 -Wl,-fatal_warnings -Wl,-bind_at_load -fstack-protector-strong -stdlib=libc++",
+        "target_arch": "aarch64",
+        "target_os": "macOS",
+        "cppdefines": "SAFEINT_USE_INTRINSICS 0 PCRE2_STATIC NDEBUG ASIO_HAS_STD_INVOKE_RESULT ABSL_FORCE_ALIGNED_ACCESS BOOST_ENABLE_ASSERT_DEBUG_HANDLER BOOST_FILESYSTEM_NO_CXX20_ATOMIC_REF BOOST_LOG_NO_SHORTHAND_NAMES BOOST_LOG_USE_NATIVE_SYSLOG BOOST_LOG_WITHOUT_THREAD_ATTR BOOST_MATH_NO_LONG_DOUBLE_MATH_FUNCTIONS BOOST_SYSTEM_NO_DEPRECATED BOOST_THREAD_USES_DATETIME BOOST_THREAD_VERSION 5"
+      },
+      "bits": 64,
+      "debug": false,
+      "maxBsonObjectSize": 16777216,
+      "macOS": {
+        "osProductVersion": "27.0.1",
+        "osRelease": "27.0.0",
+        "version": "Darwin Kernel Version 27.0.0: Tue Aug 11 21:20:40 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6020"
+      },
+      "storageEngines": [
+        "devnull",
+        "wiredTiger"
+      ],
+      "ok": 1.0,
+      "$clusterTime": {
+        "clusterTime": "Timestamp(1792494520, 12)",
+        "signature": {
+          "hash": "b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+          "keyId": 0
+        }
+      },
+      "operationTime": "Timestamp(1792494520, 12)"
+    },
+    "hostInfo": {
+      "system": {
+        "currentTime": "2026-10-20 11:08:40.924000",
+        "hostname": "MacBook-Pro-154.local:27020",
+        "cpuAddrSize": 64,
+        "memSizeMB": 32768,
+        "memLimitMB": 32768,
+        "numCores": 12,
+        "numCoresAvailableToProcess": 12,
+        "numPhysicalCores": 12,
+        "numCpuSockets": 1,
+        "cpuArch": "arm64",
+        "numaEnabled": false,
+        "numNumaNodes": 1
+      },
+      "os": {
+        "type": "Darwin",
+        "name": "Mac OS X",
+        "version": "27.0.0"
+      },
+      "extra": {
+        "versionString": "Darwin Kernel Version 27.0.0: Tue Aug 11 21:20:40 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6020",
+        "alwaysFullSync": 0,
+        "nfsAsync": 0,
+        "model": "Mac14,10",
+        "cpuString": "Apple M2 Pro",
+        "pageSize": 16384,
+        "scheduler": "edge"
+      },
+      "ok": 1.0,
+      "$clusterTime": {
+        "clusterTime": "Timestamp(1792494520, 12)",
+        "signature": {
+          "hash": "b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+          "keyId": 0
+        }
+      },
+      "operationTime": "Timestamp(1792494520, 12)"
+    },
+    "getCmdLineOpts": {
+      "argv": [
+        "mongod",
+        "--replSet",
+        "rs0",
+        "--port",
+        "27020",
+        "--dbpath",
+        "/Users/faisalnaveed/mongo-rs-7.0.45/n3",
+        "--bind_ip",
+        "127.0.0.1",
+        "--logpath",
+        "/Users/faisalnaveed/mongo-rs-7.0.45/n3/mongod.log"
+      ],
+      "parsed": {
+        "net": {
+          "bindIp": "127.0.0.1",
+          "port": 27020
+        },
+        "replication": {
+          "replSet": "rs0"
+        },
+        "storage": {
+          "dbPath": "/Users/faisalnaveed/mongo-rs-7.0.45/n3"
+        },
+        "systemLog": {
+          "destination": "file",
+          "path": "/Users/faisalnaveed/mongo-rs-7.0.45/n3/mongod.log"
+        }
+      },
+      "ok": 1.0,
+      "$clusterTime": {
+        "clusterTime": "Timestamp(1792494520, 12)",
+        "signature": {
+          "hash": "b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+          "keyId": 0
+        }
+      },
+      "operationTime": "Timestamp(1792494520, 12)"
+    },
+    "featureCompatibilityVersion": {
+      "featureCompatibilityVersion": {
+        "version": "7.0"
+      },
+      "ok": 1.0,
+      "$clusterTime": {
+        "clusterTime": "Timestamp(1792494520, 12)",
+        "signature": {
+          "hash": "b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+          "keyId": 0
+        }
+      },
+      "operationTime": "Timestamp(1792494520, 12)"
+    },
+    "writeConcernDefaults": {
+      "defaultReadConcern": {
+        "level": "local"
+      },
+      "defaultWriteConcern": {
+        "w": "majority",
+        "wtimeout": 0
+      },
+      "defaultWriteConcernSource": "implicit",
+      "defaultReadConcernSource": "implicit",
+      "localUpdateWallClockTime": "2026-10-20 11:08:40.924000",
+      "ok": 1.0,
+      "$clusterTime": {
+        "clusterTime": "Timestamp(1792494520, 12)",
+        "signature": {
+          "hash": "b'\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+          "keyId": 0
+        }
+      },
+      "operationTime": "Timestamp(1792494520, 12)"
+    },
+    "writeConcernMajorityJournalDefault": true
+  }
+]
